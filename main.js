@@ -23,6 +23,7 @@ const app={
     isPlaying: false,
     isRandom:false,
     isRepeat:false,
+    a:false,
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs:[
         {
@@ -229,13 +230,16 @@ const app={
             }
         }
         menuBtn.onclick=function(){
-            if( playList.getAttribute('style')=='display:block;') {
+            if( playList.getAttribute('style')==='display:block;') {
                 playList.setAttribute('style', 'display:none;')
+                _this.a=false
             }
             else {
                 playList.setAttribute('style', 'display:block;');
-                menuBtn.classList.add('active');
+                // menuBtn.classList.add('active')
+                _this.a=true
             }
+            menuBtn.classList.toggle('active',_this.a)
         }
     
     },
