@@ -17,6 +17,16 @@ justify-content: center;
 align-items: center;
 }
 
+.decor-icon {
+    position: absolute;
+    /* z-index: 2; */
+    color:#F2BED1;
+    bottom: 125px;
+    font-size: 50px;
+    rotate: 30deg;
+    opacity: 0.5;
+}
+
 html {
 box-sizing: border-box;
 font-family: "Poppins", sans-serif;
@@ -143,7 +153,8 @@ border-radius: 30px;
 .progress::-webkit-slider-thumb {
 -webkit-appearance: none;
 appearance: none;
-width: 20px;
+width: 23px;
+outline:2px ridge #ca9aac;
 height: 12px;
 border-radius: 30px;
 background-color: var(--primary-color);
