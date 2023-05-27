@@ -21,7 +21,7 @@ align-items: center;
     position: absolute;
     /* z-index: 2; */
     color:#F2BED1;
-    bottom: 125px;
+    /* bottom: 125px; */
     font-size: 50px;
     rotate: 30deg;
     opacity: 0.5;
